@@ -1,9 +1,5 @@
--- ============================================================
--- Epochs '26 Assignment 2 - Northwind SQL Analysis
--- Database: northwind2000.sqlite
--- ============================================================
 
--- 1. TOP 10 SELLING PRODUCTS (by quantity sold, with revenue)
+ 1. TOP 10 SELLING PRODUCTS (by quantity sold, with revenue)
 SELECT p.ProductName,
        SUM(od.Quantity) AS TotalQuantitySold,
        ROUND(SUM(od.Quantity * od.UnitPrice * (1 - od.Discount)), 2) AS TotalRevenue
@@ -14,7 +10,7 @@ ORDER BY TotalQuantitySold DESC
 LIMIT 10;
 
 
--- 2. TOP 10 CUSTOMERS BY REVENUE
+ 2. TOP 10 CUSTOMERS BY REVENUE
 SELECT c.CustomerID,
        c.CompanyName,
        ROUND(SUM(od.Quantity * od.UnitPrice * (1 - od.Discount)), 2) AS TotalRevenue
@@ -26,7 +22,7 @@ ORDER BY TotalRevenue DESC
 LIMIT 10;
 
 
--- 3. MONTHLY SALES TRENDS
+ 3. MONTHLY SALES TRENDS
 SELECT strftime('%Y-%m', o.OrderDate) AS Month,
        ROUND(SUM(od.Quantity * od.UnitPrice * (1 - od.Discount)), 2) AS MonthlyRevenue,
        COUNT(DISTINCT o.OrderID) AS NumOrders
@@ -36,7 +32,7 @@ GROUP BY Month
 ORDER BY Month;
 
 
--- 4. BEST-PERFORMING PRODUCT CATEGORIES
+ 4. BEST-PERFORMING PRODUCT CATEGORIES
 SELECT cat.CategoryName,
        ROUND(SUM(od.Quantity * od.UnitPrice * (1 - od.Discount)), 2) AS CategoryRevenue,
        SUM(od.Quantity) AS TotalUnitsSold
@@ -47,7 +43,7 @@ GROUP BY cat.CategoryID
 ORDER BY CategoryRevenue DESC;
 
 
--- 5. CUSTOMER PURCHASE FREQUENCY
+5. CUSTOMER PURCHASE FREQUENCY
 SELECT c.CustomerID,
        c.CompanyName,
        COUNT(DISTINCT o.OrderID) AS NumOrders,
