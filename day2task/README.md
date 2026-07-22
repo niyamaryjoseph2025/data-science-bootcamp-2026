@@ -2,16 +2,6 @@
 
 ## Database Overview
 
-Key tables used:
-
-| Table | Purpose |
-|---|---|
-| `Orders` | One row per customer order (date, customer, employee, shipping info) |
-| `Order Details` | Line items per order (product, quantity, unit price, discount) |
-| `Products` | Product catalog (name, category, supplier, price) |
-| `Categories` | Product category names |
-| `Customers` | Customer company info |
-
 ## Business Questions Answered
 
 1. What are the **top 10 selling products**?
