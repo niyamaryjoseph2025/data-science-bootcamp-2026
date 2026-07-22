@@ -47,4 +47,14 @@ Save-a-lot Markets (~$104K).
    investigating whether others are large-but-infrequent bulk buyers, since
    that changes how they should be managed.
 
+   ## Screenshots
+
+   <img width="1182" height="546" alt="image" src="https://github.com/user-attachments/assets/330312bb-644c-43e8-9156-6ab55f49af56" />
+
+   <img width="1214" height="540" alt="image" src="https://github.com/user-attachments/assets/759b5c5c-3c22-451b-8db5-272719addfbc" />
+   <img width="1365" height="549" alt="image" src="https://github.com/user-attachments/assets/66014fd2-45ca-4c90-9862-60cb759b7f2d" />
+
+
+
+
 
