@@ -1,12 +1,6 @@
 # Northwind Database — SQL & Pandas Analysis
 
-**Epochs '26 — Assignment 2** | Tag: `#evn-ds-epochs26-day02`
-
 ## Database Overview
-
-This project uses the classic **Northwind** sample database (SQLite version:
-[jpwhite3/northwind-SQLite3](https://github.com/jpwhite3/northwind-SQLite3)),
-which models a small trading company that imports/exports specialty foods.
 
 Key tables used:
 
@@ -18,8 +12,6 @@ Key tables used:
 | `Categories` | Product category names |
 | `Customers` | Customer company info |
 
-Dataset scope: **830 orders** from **91 customers**, spanning **July 1996 – May 1998**.
-
 ## Business Questions Answered
 
 1. What are the **top 10 selling products**?
@@ -28,10 +20,8 @@ Dataset scope: **830 orders** from **91 customers**, spanning **July 1996 – Ma
 4. Which **product categories perform best**?
 5. What is each customer's **purchase frequency**?
 
-All queries live in [`queries.sql`](./queries.sql); the executed SQL + Pandas
-analysis with charts lives in [`analysis.ipynb`](./analysis.ipynb).
 
-## Sample Results
+##  Results
 
 **Top 3 products by units sold:** Camembert Pierrot (1,577 units), Raclette
 Courdavault (1,496 units), Gorgonzola Telino (1,397 units).
@@ -67,16 +57,4 @@ Save-a-lot Markets (~$104K).
    investigating whether others are large-but-infrequent bulk buyers, since
    that changes how they should be managed.
 
-## How to Reproduce
 
-1. Open `analysis.ipynb` in Google Colab or Jupyter.
-2. Upload `northwind2000.sqlite` alongside the notebook (or place it in the
-   same directory in Colab).
-3. Run all cells — the notebook connects via `sqlite3`, runs each query with
-   `pandas.read_sql_query`, and renders charts with `matplotlib`.
-
-## Repository Contents
-
-- `queries.sql` — the 5 SQL analysis queries
-- `analysis.ipynb` — SQL execution + Pandas exploratory analysis (with charts)
-- `README.md` — this file
