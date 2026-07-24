@@ -1,3 +1,6 @@
+##Data Overview
+
+The dataset contains 4,009 used car listings, each describing a vehicle's brand, model, model year, mileage, price, fuel type, transmission, engine specification, accident history, and title status. It spans model years from 1974 to 2024 and prices from $2,000 to $2,954,083, reflecting a mix of everyday used cars and high-end luxury or exotic vehicles. Two key numeric fields, milage and price, arrived as text with embedded symbols (e.g., "51,000 mi.", "$10,300") rather than usable numbers, and several categorical fields — fuel_type, accident, and clean_title — had a meaningful share of missing values. No exact duplicate rows were found, so the dataset required formatting and consistency fixes more than deduplication.
 
 ## Data Quality Issues Identified
 - `milage` and `price` are stored as text with symbols (e.g. `"51,000 mi."`, `"$10,300"`), not numeric.
